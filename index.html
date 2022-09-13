@@ -3,20 +3,70 @@
 <head>
     <title>BEM-example</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
-<body class="fitnesso">
-<div class="fitnesso__bloc1 bloc1">
-    <div class="bloc1">
-        <div class="bloc1__left">
-            <div class="bloc1__heading">
-                Sandra Lydns
+<body>
+
+    <header class="header">
+        <div class="header__logo">
+            <img src="./img/header_logo.svg" alt="">
+        </div>
+        <div class="header__menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="" class="menu__link">About</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Free Workouts</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Shop</a>
+                </li>
+                <li class="menu__item">
+                    <button class="menu__button action-button">BOOK A CALL</button>
+                </li>
+                <li class="menu__item">
+                    <div class="menu__cart-icon">
+                        <a href="#" class="cart-button">
+                            <img src="./img/cart_icon.svg" alt="">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+    <section class="about-trainer">
+        <div class="about-trainer__photo">
+            <h1 class="text-name">Sandra Lyons</h1>
+            <img src="./img/trainer_photo.jpg" alt="">
+        </div>
+        <div class="about-trainer__description">
+            <p class="desc-name">Hi i'm Sandra Lyons</p>
+            <p class="desc-middle">Your go to online fitness trainer and nutritionist.</p>
+            <p class="desc-bottom">After getting a bachelors in nutrition and fitness training I started working with people all around and changing their lives forever.</p>
+            <button class="action-button">ONLINE COACHING</button>
+        </div>
+    </section>
+
+
+    <section class="features">
+        <div class="features__numbers">
+            <div class="features__column">
+                <p class="features__number">1900+</p>
+                <p class="features__text">HAPPY CLIENTS</p>
             </div>
-            <img src="./img/IMAGE.png" alt="IMAGE">
+            <div class="features__column">
+                <p class="features__number">5 yrs</p>
+                <p class="features__text">OF EXPERIENCE</p>
+            </div>
+            <div class="features__column">
+                <p class="features__number">156K</p>
+                <p class="features__text">FOLLOWING ME</p>
+            </div>
         </div>
-        <div class="bloc1__right">
-        </div>
-    </div>
-</div>
+    </section>
 </body>
 </html>
