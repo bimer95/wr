@@ -1,90 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Red+Hat+Display&family=Roboto&display=swap');
 
-.header {
-    width: 100%;
-    height: 60px;
-    background-color: #fff;
-    padding: 0 49px 0 36px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+/* Header Start */
 
-.header__logo {
+.header {
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px 0 30px;
 }
 
 .menu__list {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 .menu__link {
-    margin-right: 40px;
+    margin-left: 40px;
     font-family: 'Red Hat Display';
     font-weight: 400;
     font-size: 14px;
+    letter-spacing: 0.5px;
     color: #081158;
 }
 
-.action-button {
+.btn {
+    display: flex;
+    justify-content: center;
     position: relative;
-    height: 62px;
     background: #081158;
     border-radius: 6px;
-    padding: 0 20px 0 20px;
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
-    text-align: center;
     letter-spacing: 2px;
-    color: #FFF;
+    color: #fff;
+    width: 214px;
+    height: 62px;
+    line-height: 62px;
+    padding-left: 20px;
 }
 
-/* Хз почему не работает иконка в кнопке */
-.action-button::before {
-    content: " ";
+.btn::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 19px;
     position: absolute;
-    background-image: url("../img/button_arrow.svg") no-repeat;
-    height: 100%;
-    width: 100%;
+    background: url("../img/btn-arrow-icon.svg") no-repeat;
+    top: 21px;
+    left: 15px;
 }
 
-.menu__button {
+.menu__btn {
+    width: 173px;
     height: 46px;
+    margin-left: 20px;
+    margin-right: 25px;
+    line-height: 46px;
+    padding-left: 20px;
 }
 
-.menu__cart-icon {
-    margin-left: 25px;
+.menu__btn::before {
+    width: 14px;
+    height: 18px;
+    top: 13px;
+    left: 18px;
 }
 
-.about-trainer {
+/* Header End */
+
+
+
+/* About Start */
+
+.about {
     background: #EEF0F4;
     padding: 90px 36px 150px 36px;
-    display:flex;
-    column-gap: 80px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.about-trainer__photo {
+
+.about__photo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    margin-right: 80px;
 }
-.text-name {
+
+.about__name {
     font-family: 'Permanent Marker';
     font-style: normal;
     font-weight: 400;
     font-size: 64px;
     color: #8EA5A0;
-    margin: -15px 0 -15px 0;
+    text-align: center;
 }
 
-.about-trainer__description {
-    margin-top: 118px;
+.about__desc {
+    width: 600px;
+    height: 519px;
+    padding-right: 30px;
 }
-.desc-name {
+
+.about__welcome-text {
     font-family: 'Red Hat Display';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 1px;
@@ -93,7 +116,7 @@
     margin-bottom: 32px;
 }
 
-.desc-middle {
+.about__action-text {
     max-width: 552px;
     font-family: 'Roboto';
     font-style: normal;
@@ -104,7 +127,7 @@
     margin-bottom: 31px;
 }
 
-.desc-bottom {
+.about__result-text {
     max-width: 496px;
     font-family: 'Red Hat Display';
     font-weight: 400;
@@ -112,15 +135,20 @@
     line-height: 36px;
     color: #081158;
     margin-bottom: 25px;
-    
 }
+
+/* About End */
+
+
+
+/* Features Start */
 
 .features {
     background: #081158;
     height: 165px;
 }
 
-.features__numbers {
+.features__desc{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -132,7 +160,7 @@
     text-align: center;
 }
 
-.features__number {
+.features__value {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -151,3 +179,5 @@
     letter-spacing: 1px;
     color: #DFDFDF;
 }
+
+/* Features End */
