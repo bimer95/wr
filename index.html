@@ -3,20 +3,66 @@
 <head>
     <title>BEM-example</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
-<body class="fitnesso">
-<div class="fitnesso__bloc1 bloc1">
-    <div class="bloc1">
-        <div class="bloc1__left">
-            <div class="bloc1__heading">
-                Sandra Lydns
+<body>
+
+    <header class="header">
+        <div class="header__logo">
+            <img src="./img/header-logo.svg" alt="header-logo">
+        </div>
+        <nav class="header__menu menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">About</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Free Workouts</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Shop</a>
+                </li>
+                <li class="menu__item">
+                    <button class="menu__btn btn ">BOOK A CALL</button>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__cart">
+                        <img src="./img/cart-btn.svg" alt="cart-btn">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="about">
+        <div class="about__photo">
+            <h1 class="about__name">Sandra Lyons</h1>
+            <img src="./img/about-photo.jpg" alt="about-photo">
+        </div>
+        <div class="about__desc">
+            <p class="about__welcome-text">Hi i'm Sandra Lyons</p>
+            <p class="about__action-text">Your go to online fitness trainer and nutritionist.</p>
+            <p class="about__result-text">After getting a bachelors in nutrition and fitness training I started working with people all around and changing their lives forever.</p>
+            <button class="about__btn btn">ONLINE COACHING</button>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="features__desc">
+            <div class="features__column">
+                <p class="features__value">1900+</p>
+                <p class="features__text">HAPPY CLIENTS</p>
             </div>
-            <img src="./img/IMAGE.png" alt="IMAGE">
+            <div class="features__column">
+                <p class="features__value">5 yrs</p>
+                <p class="features__text">OF EXPERIENCE</p>
+            </div>
+            <div class="features__column">
+                <p class="features__value">156K</p>
+                <p class="features__text">FOLLOWING ME</p>
+            </div>
         </div>
-        <div class="bloc1__right">
-        </div>
-    </div>
-</div>
+    </section>
 </body>
 </html>
